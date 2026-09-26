@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Blood Donor Management System{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="{{ url_for('index') }}"><span class="brand-mark">+</span><span><strong>LifeLine</strong><small>Blood Donor Management</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links"><a href="{{ url_for('index') }}" class="{% if request.endpoint == 'index' %}active{% endif %}">Dashboard</a><a href="{{ url_for('donors') }}" class="{% if request.endpoint in ('donors','add_donor','edit_donor','donor_details') %}active{% endif %}">Donors</a><a href="{{ url_for('donations') }}" class="{% if request.endpoint in ('donations','add_donation') %}active{% endif %}">Donations</a><a href="{{ url_for('inventory') }}" class="{% if request.endpoint in ('inventory','add_inventory') %}active{% endif %}">Blood Inventory</a><a href="{{ url_for('reports') }}" class="{% if request.endpoint == 'reports' %}active{% endif %}">Reports</a></nav>
+  </header>
+  <main class="page-shell">
+    {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash-stack" aria-live="polite">{% for category,message in messages %}<div class="flash {{ category }}">{{ message }}<button type="button" aria-label="Dismiss message" class="dismiss">×</button></div>{% endfor %}</div>{% endif %}{% endwith %}
+    {% block content %}{% endblock %}
+    <footer>Blood Donor Management System <span>·</span> Academic project</footer>
+  </main>
+</body>
+</html>
