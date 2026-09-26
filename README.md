@@ -503,8 +503,8 @@ Add screenshots of the main application pages inside a `screenshots` folder and 
 
 ## Author
 
-**Student Name:** [Your Name]  
-**USN:** [Your USN]  
+**Student Name:** LIKITH P
+**USN:** U18IN24S0027 
 **Course:** BCA  
 **Project:** Blood Donor Management System
 
