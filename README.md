@@ -444,16 +444,14 @@ The SQLite database is used by the application for persistent donor, donation, a
 
 Add screenshots of the main application pages inside a `screenshots` folder and update the paths below if required.
 
-```markdown
-![Dashboard](screenshots/Dashboard.png)
 
-![Donors](screenshots/Donors.png)
+![Dashboard](https://github.com/likithp-2k6/Blood-Donor-Management-System/blob/main/Screenshots/Dashboard.png)
 
-![Donations](screenshots/Donations.png)
+![Donors](https://github.com/likithp-2k6/Blood-Donor-Management-System/blob/main/Screenshots/Donors.png)
 
-![Inventory](screenshots/Inventory.png)
-```
+![Donations](https://github.com/likithp-2k6/Blood-Donor-Management-System/blob/main/Screenshots/Donations.png)
 
+![Inventory](https://github.com/likithp-2k6/Blood-Donor-Management-System/blob/main/Screenshots/Inventory.png)
 ---
 
 ## Future Enhancements
