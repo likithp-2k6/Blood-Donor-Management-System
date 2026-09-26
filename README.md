@@ -445,13 +445,13 @@ The SQLite database is used by the application for persistent donor, donation, a
 Add screenshots of the main application pages inside a `screenshots` folder and update the paths below if required.
 
 ```markdown
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
-![Donors](screenshots/donors.png)
+![Donors](screenshots/Donors.png)
 
-![Donations](screenshots/donations.png)
+![Donations](screenshots/Donations.png)
 
-![Inventory](screenshots/inventory.png)
+![Inventory](screenshots/Inventory.png)
 ```
 
 ---
